@@ -1,0 +1,6 @@
+pycache/
+dev/
+dist/
+setup.py
+requirements.txt
+pygamevideo.egg-info/
