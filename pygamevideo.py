@@ -200,7 +200,7 @@ class Video:
 
     @property
     def remaining_frames(self):
-        return self.frame_count - self.current_frame
+        return self.total_frames - self.current_frame
 
     def seek_time(self, t):
         if isinstance(t, Time):
@@ -295,7 +295,9 @@ class Video:
                 for _ in range(target_frames):
                     success, frame = self.vidcap.read()
                     audio_frame, val = self.ff.get_frame()
-
+                    if val == 'eof':
+                        success = False
+                    
                     if not success:
                         if self.is_looped:
                             self.restart()
@@ -310,5 +312,5 @@ class Video:
 
     def draw_to(self, surface, pos):
         frame = self.get_frame()
-
-        surface.blit(frame, pos)
+        if frame:
+            surface.blit(frame, pos)
