@@ -157,7 +157,7 @@ class Video:
 
     def pause(self):
         self.is_paused = True
-        sel.ff.set_pause(True)
+        self.ff.set_pause(True)
 
     def resume(self):
         self.is_paused = False
