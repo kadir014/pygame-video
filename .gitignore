@@ -3,3 +3,4 @@ dev/
 dist/
 setup.py
 pygamevideo.egg-info/
+requirements.txt
