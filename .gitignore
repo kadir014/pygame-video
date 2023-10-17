@@ -1,6 +1,5 @@
-pycache/
+__pycache__/
 dev/
 dist/
 setup.py
-requirements.txt
 pygamevideo.egg-info/
