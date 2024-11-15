@@ -40,7 +40,7 @@ while True:
 
 ## Dependencies
 - [Python](https://www.python.org/downloads/) 3.9+
-- [Pygame Community Edition](https://github.com/pygame-community/pygame-ce) 2.20.0+
+- [Pygame Community Edition](https://github.com/pygame-community/pygame-ce) 2.2.0+
 - [NumPy](https://pypi.org/project/numpy/)
 - [OpenCV](https://pypi.org/project/opencv-python/)
 - [FFPyPlayer](https://pypi.org/project/ffpyplayer/)
